@@ -1,0 +1,34 @@
+Generated at 2012-05-22 14:32:23 +0700
+Mixlib::ShellOut::ShellCommandFailed: bash[install RVM] (RVM::install line 1) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of "bash"  "/tmp/chef-script20120522-13974-338944" ----
+STDOUT: 
+STDERR: /tmp/chef-script20120522-13974-338944: line 1: /home/fabian/fabian: No such file or directory
+---- End output of "bash"  "/tmp/chef-script20120522-13974-338944" ----
+Ran "bash"  "/tmp/chef-script20120522-13974-338944" returned 1
+/usr/local/lib/ruby/gems/1.9.1/gems/mixlib-shellout-1.0.0.rc.1/lib/mixlib/shellout.rb:242:in `invalid!'
+/usr/local/lib/ruby/gems/1.9.1/gems/mixlib-shellout-1.0.0.rc.1/lib/mixlib/shellout.rb:228:in `error!'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/mixin/shell_out.rb:36:in `shell_out!'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/provider/execute.rb:58:in `action_run'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/provider/script.rb:33:in `action_run'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource.rb:454:in `run_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/runner.rb:49:in `run_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/runner.rb:85:in `block (2 levels) in converge'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/runner.rb:85:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/runner.rb:85:in `block in converge'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource_collection.rb:94:in `block in execute_each_resource'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/resource_collection.rb:92:in `execute_each_resource'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/runner.rb:80:in `converge'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/client.rb:330:in `converge'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/client.rb:163:in `run'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/application/solo.rb:207:in `block in run_application'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/application/solo.rb:195:in `loop'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/application/solo.rb:195:in `run_application'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/lib/chef/application.rb:70:in `run'
+/usr/local/lib/ruby/gems/1.9.1/gems/chef-0.10.10/bin/chef-solo:25:in `<top (required)>'
+/usr/local/bin/chef-solo:19:in `load'
+/usr/local/bin/chef-solo:19:in `<main>'
